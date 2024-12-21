@@ -1,16 +1,16 @@
 {
-  "name": "react-project-started",
+  "name": "iphone-cameroon",
   "private": "true",
-  "version": "1.0.1",
-  "description": "Ce dépôt est un template moderne et flexible pour démarrer rapidement vos projets React. Il intègre ShadCN, Aeternity, et FarmUI, trois outils puissants pour créer des interfaces utilisateur élégantes et dynamiques. Ce template est optimisé pour les performances, la modularité et une configuration rapide",
+  "version": "0.0.0",
+  "description": "A modern e-commerce website dedicated to selling iPhones. Features an intuitive interface, advanced product and order management, and a seamless user experience. Perfect for tech enthusiasts and Apple fans. 🌟📱",
   "repository": {
     "type": "git",
-    "url": "https://github.com/01Barthez/React-started"
+    "url": "https://github.com/01Barthez/Iphone-Cameroon"
   },
-  "homepage": "https://github.com/01Barthez/React-started#readme",
-  "readme": "https://github.com/01Barthez/React-started#readme",
+  "homepage": "https://github.com/01Barthez/Iphone-Cameroon#readme",
+  "readme": "https://github.com/01Barthez/Iphone-Cameroon#readme",
   "bugs": {
-    "url": "https://github.com/01Barthez/React-started/issues"
+    "url": "https://github.com/01Barthez/Iphone-Cameroon/issues"
   },
   "author": {
     "name": "Barthez Kenwou",
@@ -20,15 +20,31 @@
   "license": "MIT",
   "main": "index.html",
   "keywords": [
-    "Barthez Kenwou",
-    "React",
-    "Shadcn",
-    "Aceternity",
-    "Typescript",
-    "Web Developer",
-    "Frontend Developer",
-    "Fullstack Developer",
-    "TailwindCSS"
+    "iphone",
+    "iphone sale",
+    "buy iphone",
+    "iphone store",
+    "apple phones",
+    "iphone deals",
+    "iphone e-commerce",
+    "iphone shopping",
+    "apple store",
+    "iphone marketplace",
+    "new iphone",
+    "refurbished iphone",
+    "cheap iphone",
+    "iphone discounts",
+    "latest iphone",
+    "online iphone store",
+    "iphone shop",
+    "iphone offers",
+    "iphone products",
+    "apple devices",
+    "iphone models",
+    "iphone accessories",
+    "iphone purchase",
+    "best iphone deals",
+    "iphone online"
   ],
   "type": "module",
   "engines": {

@@ -3,6 +3,16 @@ export default {
   darkMode: ['class'],
   content: ['./index.html', './src/**/*.{ts,tsx,js,jsx}'],
   theme: {
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '1rem',
+        sm: '2rem',
+        lg: '5rem',
+        xl: '8rem',
+        '2xl': '10rem',
+      },
+    },
     extend: {
       borderRadius: {
         lg: 'var(--radius)',
@@ -51,6 +61,9 @@ export default {
           5: 'hsl(var(--chart-5))',
         },
       },
+      fontFamily: {
+        "poppins": ["Poppins", "Sans-serif"],
+      }
     },
   },
   plugins: [require('tailwindcss-animate')],
