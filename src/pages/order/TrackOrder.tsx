@@ -2,11 +2,11 @@ import React from 'react'
 import { useParams } from 'react-router-dom';
 
 const TrackOrder: React.FC = () => {
-  const { id } = useParams();
+  const { orderID } = useParams();
 
   return (
     <div>
-      track Order: { id }
+      track Order: { orderID }
     </div>
   )
 }

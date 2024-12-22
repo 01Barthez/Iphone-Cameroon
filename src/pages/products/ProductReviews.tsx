@@ -1,9 +1,12 @@
 import React from 'react'
+import { useParams } from 'react-router-dom';
 
 const ProductReviews: React.FC = () => {
+    const { productID } = useParams();
+  
     return (
         <div>
-            Product Reviews
+            Product {productID} Reviews
         </div>
     )
 }

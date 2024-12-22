@@ -1,4 +1,4 @@
-import { createBrowserRouter, Outlet } from 'react-router-dom'
+import { createBrowserRouter, Navigate, Outlet } from 'react-router-dom'
 import ScrollToTop from '@/components/custom/ScrollToTop'
 import Navbar from '@/layouts/navbar/Navbar'
 import Footer from '@/layouts/footer/Footer'
@@ -48,7 +48,7 @@ const userNameSlug = 'barthez';
 
 const Router = createBrowserRouter([
 	{
-		path: '/',
+		path: '',
 		element: (
 			<>
 				<Outlet />
@@ -82,12 +82,12 @@ const Router = createBrowserRouter([
 
 					// Follow process to bye product
 					{
-						path: 'card',
+						path: '/card',
 						element: <ShoppingCard />
 					},
 
 					{
-						path: 'checkout',
+						path: '/checkout',
 						element: <Checkout />
 					},
 
@@ -97,7 +97,7 @@ const Router = createBrowserRouter([
 						element: <Outlet />,
 						children: [
 							{
-								path: '/',
+								path: '',
 								element: <Products />
 							},
 
@@ -121,15 +121,22 @@ const Router = createBrowserRouter([
 							{
 								path: 'search',
 								element: <SearchResult />
-							}
+							},
+
+							// Products in promotion
+							{
+								path: 'promotions',
+								element: <Promotion />
+							},
 						]
 					},
 
 
 					// Account Group
 					{
-						path: '',
+						path: '/',
 						element: <Outlet />,
+						errorElement: <PageError />,
 						children: [
 							{
 								path: '/account',
@@ -145,6 +152,13 @@ const Router = createBrowserRouter([
 								element: <Outlet />,
 								children: [
 									{
+										path: '',
+										element: <>
+											<Navigate to={`/${userNameSlug}/setting`} replace />
+										</>
+									},
+
+									{
 										path: 'setting',
 										element: (
 											<PrivateRoute>
@@ -158,15 +172,6 @@ const Router = createBrowserRouter([
 										element: (
 											<PrivateRoute>
 												<Notification />
-											</PrivateRoute>
-										)
-									},
-
-									{
-										path: 'promotions',
-										element: (
-											<PrivateRoute>
-												<Promotion />
 											</PrivateRoute>
 										)
 									},

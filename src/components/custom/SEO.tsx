@@ -33,7 +33,7 @@ const SEO: React.FC<ISEOProps> = ({
 		"iphone online"
 	],
 	image = '',
-	url = window.location.href,
+	url = typeof window !== 'undefined' ? window.location.href : '',
 	type = 'website',
 }) => {
 	return (

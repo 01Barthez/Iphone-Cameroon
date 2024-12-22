@@ -15,7 +15,7 @@ const SearchResult: React.FC = () => {
         description="Browse through our search results to find the iPhones and accessories you're looking for."
       />
 
-      Search Result
+      Search Result of { category}
     </>
   )
 }

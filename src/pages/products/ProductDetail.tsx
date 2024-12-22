@@ -3,7 +3,7 @@ import React from 'react'
 import { useParams } from 'react-router-dom';
 
 const ProductDetail: React.FC = () => {
-  const { id } = useParams();
+  const { productID } = useParams();
 
   return (
     <>
@@ -12,7 +12,7 @@ const ProductDetail: React.FC = () => {
         description='Explore detailed specifications, features, and pricing for the iPhone of your choice. Find your perfect match today.'
       />
       
-      Detail of product: {id}
+      Detail of product: {productID}
     </>
   )
 }
