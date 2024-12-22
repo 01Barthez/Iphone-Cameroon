@@ -1,3 +1,4 @@
+import defaultSEO from '@/core/config/seoConfig'
 import type { ISEOProps } from '@/interface/interface'
 import React from 'react'
 import { Helmet } from 'react-helmet-async'
@@ -5,36 +6,12 @@ import { Helmet } from 'react-helmet-async'
 const SEO: React.FC<ISEOProps> = ({
 	title,
 	description,
-	keywords = [
-		"iphone",
-		"iphone sale",
-		"buy iphone",
-		"iphone store",
-		"apple phones",
-		"iphone deals",
-		"iphone e-commerce",
-		"iphone shopping",
-		"apple store",
-		"iphone marketplace",
-		"new iphone",
-		"refurbished iphone",
-		"cheap iphone",
-		"iphone discounts",
-		"latest iphone",
-		"online iphone store",
-		"iphone shop",
-		"iphone offers",
-		"iphone products",
-		"apple devices",
-		"iphone models",
-		"iphone accessories",
-		"iphone purchase",
-		"best iphone deals",
-		"iphone online"
-	],
-	image = '',
-	url = typeof window !== 'undefined' ? window.location.href : '',
-	type = 'website',
+
+	// Default value for each pages
+	keywords = defaultSEO.keywords,
+	image = defaultSEO.image,
+	url = defaultSEO.url,
+	type = defaultSEO.type,
 }) => {
 	return (
 		<Helmet>
