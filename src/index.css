@@ -58,9 +58,9 @@
 }
 @layer base {
   * {
-    @apply border-border duration-150;
+    @apply border-border;
   }
   body {
-    @apply bg-background font-poppins text-foreground;
+    @apply bg-background font-poppins text-foreground duration-150;
   }
 }

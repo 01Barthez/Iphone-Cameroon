@@ -1,4 +1,5 @@
 import type React from "react";
+import { ReactNode } from "react";
 
 export interface ISEOProps {
   title: string;
@@ -31,4 +32,8 @@ export interface FetchState<T> {
   loading: boolean;
   error: string | null;
   fetchData: (url: string) => Promise<void>;
+}
+
+export interface IPrivateRouteProps {
+  children: ReactNode
 }
