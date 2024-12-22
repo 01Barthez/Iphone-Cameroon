@@ -25,8 +25,9 @@
     "paths": {
       "@/*": ["./src/*"]
     },
+
     // Active Node type
     "types": ["node", "vite/client", "vitest/globals"]
   },
-  "include": ["src"]
+  "include": ["src", "global.d.ts"]
 }
