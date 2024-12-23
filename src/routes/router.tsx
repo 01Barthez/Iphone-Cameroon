@@ -1,5 +1,4 @@
 import { createBrowserRouter, Navigate, Outlet } from 'react-router-dom'
-import ScrollToTop from '@/components/custom/ScrollToTop'
 import Navbar from '@/layouts/navbar/Navbar'
 import Footer from '@/layouts/footer/Footer'
 import PageError from '@/pages/error/PageError'
@@ -19,11 +18,12 @@ import Setting from '@/pages/account/Setting'
 import Notification from '@/pages/notifications/Notification'
 import Promotion from '@/pages/promotions/Promotion'
 import TrackOrder from '@/pages/order/TrackOrder'
-import PrivateRoute from '@/components/custom/PrivateRoute'
 import Return from '@/pages/return/Return'
 import Home from '@/pages/home/Home'
 import settingsRoute from './routes-config/settingRoutes'
 import authRoutes from './routes-config/authRoutes'
+import ScrollToTop from '@/components/custom/utils/ScrollToTop'
+import PrivateRoute from '@/components/custom/utils/PrivateRoute'
 
 // const Home = lazy(() => import('@/pages/home/Home'))
 
