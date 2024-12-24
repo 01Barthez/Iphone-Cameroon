@@ -2,9 +2,9 @@ import Logo from '@/components/custom/utils/Logo'
 import React from 'react'
 import FooterCol from './FooterCol'
 import { FootersLinks, SocialLink } from '@/core/mocks/footer.mock'
-import ModeToogle from '@/components/custom/ModeToogle'
 import { Link } from 'react-router-dom'
 import LanguageSelector from '@/components/custom/utils/LanguageSelector'
+import ModeToogle from '@/components/custom/utils/ModeToogle'
 
 /**
  * Functional component for rendering a footer

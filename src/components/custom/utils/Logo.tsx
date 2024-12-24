@@ -5,15 +5,15 @@ import LogoDark from "public/images/LogoDark.svg";
 import { useTheme } from "@/hooks/use-theme";
 
 interface LogoProps {
-  isFooter?: boolean; // Détermine si le logo est utilisé dans le footer
+  isDarkZone?: boolean; 
 }
 
-const Logo: React.FC<LogoProps> = ({ isFooter = false }) => {
+const Logo: React.FC<LogoProps> = ({ isDarkZone = false }) => {
   const { theme } = useTheme();
 
   // Détermine le logo à utiliser
   const isDarkMode = theme === "dark" || (theme === "system" && matchMedia("(prefers-color-scheme: dark)").matches);
-  const logoSrc = isDarkMode || isFooter ? LogoLight : LogoDark;
+  const logoSrc = isDarkMode || isDarkZone ? LogoLight : LogoDark;
 
   return (
     <Link to="/" className="inline-block w-24">
