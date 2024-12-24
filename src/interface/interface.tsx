@@ -1,5 +1,4 @@
-import type React from "react";
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
 
 export interface ISEOProps {
   title: string;
@@ -12,14 +11,14 @@ export interface ISEOProps {
 }
 
 export interface ISocialLink {
-  id: number,
+  id: string,
   url: string,
   name: string,
-  icon: React.ReactElement,
+  icon: ReactNode,
 }
 
 export interface IFootersLinks {
-  id?: number,
+  id?: string,
   title: string,
   links: { // For differents links
       url: string;
@@ -36,4 +35,8 @@ export interface FetchState<T> {
 
 export interface IPrivateRouteProps {
   children: ReactNode
+}
+
+export interface ILogoProps {
+	isDarkZone?: boolean;
 }
