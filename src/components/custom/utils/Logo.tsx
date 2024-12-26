@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import LogoLight from "public/images/LogoLight.svg";
-import LogoDark from "public/images/LogoDark.svg";
+import LogoLight from "/images/LogoLight.svg";
+import LogoDark from "/images/LogoDark.svg";
 import { useTheme } from "@/hooks/use-theme";
 
 interface LogoProps {
