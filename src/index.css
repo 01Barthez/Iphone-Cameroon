@@ -72,4 +72,8 @@
   .linkhover {
     @apply duration-200 hover:translate-x-1.5 hover:text-footer-foreground;
   }
+
+  .bg-hero {
+    background: linear-gradient(90.7deg, #211c24 0.64%, #211c24 101%);
+  }
 }

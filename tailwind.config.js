@@ -7,7 +7,7 @@ export default {
       center: true,
       padding: {
         DEFAULT: '1rem',
-        sm: '2rem',
+        sm: '3rem',
         lg: '5rem',
         xl: '8rem',
         '2xl': '10rem',
@@ -67,6 +67,9 @@ export default {
       },
       fontFamily: {
         "poppins": ["Poppins", "Sans-serif"],
+      },
+      fontSize: {
+        "8xl": "90px",
       }
     },
   },
