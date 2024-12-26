@@ -94,7 +94,7 @@ const Footer: React.FC = () => {
             </TooltipTrigger>
 
             <TooltipContent>
-              <p>Add to library</p>
+              <p>I'm Full Stack JS developper, Click to see more...</p>
             </TooltipContent>
           </Tooltip>
         </TooltipProvider>
