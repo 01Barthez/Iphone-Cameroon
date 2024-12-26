@@ -116,25 +116,25 @@ export const SocialLink: ISocialLink[] = [
     {
         id: uuidv4(),
         icon: <AiOutlineTwitter />,
-        url: '/',
+        url: 'https://x.com/login?&mx=2',
         name: 'Twitter',
     },
     {
         id: uuidv4(),
         icon: <CgFacebook />,
-        url: '/',
+        url: 'https://www.facebook.com/login.php/',
         name: 'Facebook',
     },
     {
         id: uuidv4(),
         icon: <FaTiktok />,
-        url: '/',
+        url: 'https://www.tiktok.com/login',
         name: 'Tiktok',
     },
     {
         id: uuidv4(),
         icon: <AiFillInstagram />,
-        url: '/',
+        url: 'https://www.instagram.com/accounts/login/',
         name: 'Instagram',
     },
 ];

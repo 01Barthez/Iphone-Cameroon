@@ -5,6 +5,12 @@ import { FootersLinks, SocialLink } from '@/core/mocks/footer.mock'
 import { Link } from 'react-router-dom'
 import LanguageSelector from '@/components/custom/utils/LanguageSelector'
 import ModeToogle from '@/components/custom/utils/ModeToogle'
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip"
 
 /**
  * Functional component for rendering a footer
@@ -50,6 +56,7 @@ const Footer: React.FC = () => {
                 <Link
                   key={link.id}
                   to={link.url}
+                  target='_blank'
                   className='text-lg md:text-xl p-2 text-footer-foreground/80 hover:bg-footer-foreground/10 rounded-full duration-200'
                 >
                   {link.icon}
@@ -67,6 +74,30 @@ const Footer: React.FC = () => {
             <ModeToogle />
           </div>
         </div>
+      </div>
+
+      {/* Profile */}
+      <div className="w-full p-1 space-x-1 font-light text-sm flex justify-center bg-footer-foreground/20">
+        <span>Designed and developped by</span>
+
+        <TooltipProvider delayDuration={100}>
+          <Tooltip>
+            <TooltipTrigger>
+              <Link
+                to={'https://www.linkedin.com/in/barthez-kenwou/'}
+                target='_blank'
+                className='font-normal text-sky-300/70 hover:text-sky-500/70 hover:underline duration-200 text-nowrap'
+              >
+                Barthez Kenwou
+              </Link>
+            </TooltipTrigger>
+
+            <TooltipContent>
+              <p>Add to library</p>
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
+
       </div>
     </footer>
   )
