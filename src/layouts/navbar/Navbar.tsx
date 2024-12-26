@@ -4,10 +4,10 @@ import DownNavbar from './DownNavbar'
 
 const Navbar: React.FC = () => {
   return (
-    <>
+    <nav>
       <UpNavbar />
       <DownNavbar />
-    </>
+    </nav>
   )
 }
 

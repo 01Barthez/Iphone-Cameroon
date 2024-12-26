@@ -21,8 +21,8 @@ export interface IFootersLinks {
   id?: string,
   title: string,
   links: { // For differents links
-      url: string;
-      name: string;
+    url: string;
+    name: string;
   }[],
 }
 
@@ -38,5 +38,12 @@ export interface IPrivateRouteProps {
 }
 
 export interface ILogoProps {
-	isDarkZone?: boolean;
+  isDarkZone?: boolean;
+}
+
+export interface ILinkCategory {
+  id: string;
+  icon: ReactNode;
+  name: string;
+  href: string;
 }
