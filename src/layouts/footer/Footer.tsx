@@ -57,6 +57,7 @@ const Footer: React.FC = () => {
                   key={link.id}
                   to={link.url}
                   target='_blank'
+                  title={`contact us on ${link.name}`}
                   className='text-lg md:text-xl p-2 text-footer-foreground/80 hover:bg-footer-foreground/10 rounded-full duration-200'
                 >
                   {link.icon}
