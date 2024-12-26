@@ -1,6 +1,6 @@
 import React from 'react'
 import CTA from './utils/CTA'
-import heroImg from '@/assets/images/iphone-14-pro-max.svg'
+import heroImg from '/images/iphone-14-pro-max.svg'
 import GridPattern from "@/components/ui/grid-pattern";
 import { cn } from '@/lib/utils';
 import { motion } from "framer-motion";
@@ -40,7 +40,6 @@ const Hero: React.FC = () => {
           <img
             src={heroImg}
             alt="discorver, Iphone 14 Pro"
-            loading='lazy'
             className='w-full h-full'
           />
         </motion.div>
