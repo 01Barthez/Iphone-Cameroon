@@ -9,7 +9,7 @@ import { v4 as uuidv4 } from 'uuid';
 export const FootersLinks: IFootersLinks[] = [
     {
         id: uuidv4(),
-        title: 'App Links',
+        title: 'Navigations Links',
         links: [
             {
                 url: '/',

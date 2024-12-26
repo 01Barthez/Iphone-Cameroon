@@ -3,7 +3,7 @@ import React from 'react'
 const LanguageSelector: React.FC = () => {
   return (
     <div>
-      FR
+      <span className="text-sm">FR</span>
     </div>
   )
 }

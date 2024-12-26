@@ -5,8 +5,8 @@ import { NavLink } from 'react-router-dom'
 
 const DownNavbar: React.FC = () => {
   return (
-    <div className='bg-[#2E2E2E] dark:bg-slate-400 py-2 w-full'>
-      <div className="container hidden lg:flex items-center justify-between w-full gap-6 font-medium">
+    <div className='hidden lg:block bg-[#2E2E2E] dark:bg-slate-400 py-2 w-full'>
+      <div className="container flex items-center justify-between w-full gap-6 font-medium">
         {
           LinkCategory.map((sublink, index) => (
             <React.Fragment key={sublink.id}>
