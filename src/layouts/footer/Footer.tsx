@@ -21,7 +21,7 @@ import {
 const Footer: React.FC = () => {
   return (
     <footer className='bg-footer text-footer-foreground w-full border-t border-t-foreground/80'>
-      <div className="container py-10 space-y-10">
+      <div className="relative container py-10 space-y-10">
         {/* First line */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8 justify-items-center md:justify-items-start">
           {/* Logo and description colonn */}
@@ -75,6 +75,9 @@ const Footer: React.FC = () => {
             <ModeToogle />
           </div>
         </div>
+
+        <div className="absolute top-10 right-10 w-20 h-20 blur-3xl bg-hero-linear rounded-full" />
+        <div className="absolute bottom-28 md:top-28 md:left-80 w-20 h-20 blur-3xl bg-hero-linear rounded-full" />
       </div>
 
       {/* Profile */}
@@ -93,12 +96,11 @@ const Footer: React.FC = () => {
               </Link>
             </TooltipTrigger>
 
-            <TooltipContent>
+            <TooltipContent className='bg-transparent border border-foreground text-foreground'>
               <p>I'm Full Stack JS developper, Click to see more...</p>
             </TooltipContent>
           </Tooltip>
         </TooltipProvider>
-
       </div>
     </footer>
   )

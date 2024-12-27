@@ -14,7 +14,7 @@ const userNameSlug = "barthez";
 
 const UpNavbar: React.FC = () => {
   return (
-    <div className="bg-foreground/5 py-2 md:py-4  w-full">
+    <div className="bg-background py-2 md:py-4  w-full ">
       <div className='container flex items-center gap-10 justify-between'>
         {/* Logo website */}
         <Logo />

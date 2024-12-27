@@ -69,7 +69,7 @@
     @apply bg-sky-500/80 text-foreground/80;
   }
   body {
-    @apply bg-background font-poppins text-foreground duration-150;
+    @apply relative bg-background font-poppins text-foreground duration-150;
   }
 
   .linkhover {

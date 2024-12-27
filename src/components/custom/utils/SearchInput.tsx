@@ -51,6 +51,7 @@ const SearchInput: React.FC = () => {
                     required
                     onKeyDown={handleKeyDown}
                     placeholder="Type to search an article"
+                    className='border-foreground/80'
                     {...field}
                   />
                 </FormControl>
