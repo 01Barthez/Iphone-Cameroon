@@ -47,3 +47,9 @@ export interface ILinkCategory {
   name: string;
   href: string;
 }
+
+export interface IcardCategory{
+    icon: ReactNode;
+    name: string;
+    href: string;
+}

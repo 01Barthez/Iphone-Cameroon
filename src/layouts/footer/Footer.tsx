@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
     <footer className='bg-footer text-footer-foreground w-full border-t border-t-foreground/80'>
       <div className="relative container py-10 space-y-10">
         {/* First line */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8 justify-items-center md:justify-items-start">
+        <div className="relative z-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8 justify-items-center md:justify-items-start">
           {/* Logo and description colonn */}
           <div className="max-w-md col-span-1 lg:col-span-2 flex flex-col gap-4 items-center md:items-start">
             {/* Logo */}
@@ -48,7 +48,7 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Second line line */}
-        <div className="flex flex-col-reverse md:flex-row items-center gap-4 md:justify-between">
+        <div className="relative z-20 flex flex-col-reverse md:flex-row items-center gap-4 md:justify-between">
           {/* Socials Links */}
           <div className=" flex gap-2">
             {

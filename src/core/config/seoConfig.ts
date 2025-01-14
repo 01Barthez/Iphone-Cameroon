@@ -26,7 +26,7 @@ const defaultSEO = {
     'best iphone deals',
     'iphone online',
   ],
-  image: '/default-image.jpg',
+  image: '/images/preview-image.png',
   url: typeof window !== 'undefined' ? window.location.href : '',
   type: 'website',
 };
