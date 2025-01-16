@@ -32,7 +32,7 @@ const Hero: React.FC = () => {
         </motion.div>
 
         {/* Right part for image */}
-        <motion.div className="max-w-[13rem] sm:max-w-xs md:max-w-sm relative z-20"
+        <motion.div className="pointer-events-none select-none max-w-[13rem] sm:max-w-xs md:max-w-sm relative z-20"
           initial={{ y: "100vw", opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ type: "spring", stiffness: 60, damping: 15, delay: .25 }}

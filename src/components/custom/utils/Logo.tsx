@@ -16,7 +16,7 @@ const Logo: React.FC<LogoProps> = ({ isDarkZone = false }) => {
   const logoSrc = isDarkMode || isDarkZone ? LogoLight : LogoDark;
 
   return (
-    <Link to="/" className="inline-block w-24">
+    <Link to="/" className="select-none inline-block w-24">
       <img
         src={logoSrc}
         alt="Logo Iphone Cameroon"

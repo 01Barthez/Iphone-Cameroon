@@ -1,6 +1,6 @@
 import React from 'react'
-import type { IcardCategory } from '@/interface/interface'
 import { Link } from 'react-router-dom'
+import type { IcardCategory } from '@/interface/interface';
 
 const CardOfCategory: React.FC<IcardCategory> = ({ icon, name, href }) => {
     return (
