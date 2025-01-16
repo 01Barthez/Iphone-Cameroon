@@ -10,14 +10,19 @@ const BestProducts: React.FC = () => {
           {/* Up products */}
           <div className="flex items-center gap-6">
             <img src={playstation} alt="Playstation apple to sell at a best price" />
+            <img src={playstation} alt="Playstation apple to sell at a best price" />
           </div>
         </div>
-        
+
         {/* bloc2 */}
-        <div className="max-w-[50%]"></div>
-        
+        <div className="max-w-[50%]">
+          <img src={playstation} alt="Playstation apple to sell at a best price" />
+        </div>
+
         {/* bloc3 */}
-        <div className="max-w-[50%]"></div>
+        <div className="max-w-[50%]">
+          <img src={playstation} alt="Playstation apple to sell at a best price" />
+        </div>
       </div>
     </div>
   )

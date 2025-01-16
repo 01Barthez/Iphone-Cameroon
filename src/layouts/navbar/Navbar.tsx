@@ -4,7 +4,7 @@ import DownNavbar from './DownNavbar'
 
 const Navbar: React.FC = () => {
   return (
-    <nav>
+    <nav className='sticky top-0 left-0 z-50'>
       <UpNavbar />
       <DownNavbar />
     </nav>
