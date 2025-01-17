@@ -42,7 +42,7 @@ const BrowseByCategory: React.FC = () => {
   };
 
   return (
-    <section className="w-full py-20 bg-foreground/5">
+    <section className="w-full py-20 bg-[#FAFAFA] dark:bg-neutral-800 border-t-foreground/15">
       <div className="container space-y-8">
         <div className="w-full flex items-center justify-between">
           <h2 className="text-lg md:text-xl lg:text-2xl font-medium">

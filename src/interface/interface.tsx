@@ -48,8 +48,25 @@ export interface ILinkCategory {
   href: string;
 }
 
-export interface IcardCategory{
-    icon: ReactNode;
-    name: string;
-    href: string;
+export interface IcardCategory {
+  icon: ReactNode;
+  name: string;
+  href: string;
+}
+
+type statutProduct = "New" | "Best Seller" | "Popular" | "Discount" | "Free Shipping" | "On Stock" | "On Solde" | null
+
+export interface IProduct {
+  id: string;
+  slug: string;
+  picture: string;
+  name: string;
+  price: number;
+  caracteristiques?: string;
+  description?: string;
+  isWhiteListe?: boolean;
+  isPromo?: boolean;
+  promoDelay?: number;
+  promoPercent?: number;
+  statut?: statutProduct;
 }

@@ -89,4 +89,12 @@
       #ffcc70 100%
     );
   }
+  .selected-menu-active {
+    @apply relative text-foreground;
+  }
+
+  .selected-menu-active::after {
+    content: '';
+    @apply absolute -bottom-1.5 left-0 h-[3px] w-full rounded-full bg-foreground;
+  }
 }
