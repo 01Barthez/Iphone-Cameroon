@@ -27,7 +27,7 @@ const SomeProducts: React.FC = () => {
           <CardProduct
             id="product5"
             slug='iphone-14'
-            picture={'/src/assets/images/iphone14.svg'} 
+            picture={'src/assets/images/iphone14.svg'} 
             name="Apple iPhone 14 Pro Max"
             caracteristiques="128GB Deep Purple (MQ9T3RX/A)"
             price={900}
