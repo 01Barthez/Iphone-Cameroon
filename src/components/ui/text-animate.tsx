@@ -150,6 +150,7 @@ const defaultItemAnimationVariants: Record<
         y: 0,
         transition: {
           y: { duration: 0.3 },
+          delay,
           opacity: { duration: 0.4 },
           filter: { duration: 0.3 },
         },
@@ -176,6 +177,7 @@ const defaultItemAnimationVariants: Record<
         y: 0,
         transition: {
           y: { duration: 0.3 },
+          delay,
           opacity: { duration: 0.4 },
           filter: { duration: 0.3 },
         },
@@ -304,12 +306,12 @@ export function TextAnimate({
   children,
   delay = 0,
   duration = 0.3,
-  variants,
+  // variants,
   className,
   segmentClassName,
   as: Component = "p",
   startOnView = true,
-  once = false,
+  // once = false,
   by = "word",
   animation = "fadeIn",
   ...props
@@ -330,8 +332,11 @@ export function TextAnimate({
           exit: {
             ...defaultItemAnimationVariants[animation].container.exit,
             transition: {
+              duration,
               staggerChildren: staggerTimings[by],
               staggerDirection: -1,
+              delay,
+
             },
           },
         },
