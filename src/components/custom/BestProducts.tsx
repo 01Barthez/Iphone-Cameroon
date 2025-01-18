@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import CTA from './utils/CTA'
 import Marquee from '@/components/ui/marquee'
 import playstation from "@/assets/images/PlayStation.svg"
 import macbook from "@/assets/images/Macbook.svg"
@@ -10,6 +9,7 @@ import ipdaPro from "@/assets/images/ipad.svg"
 import samsungGalaxy from "@/assets/images/samsunggalaxy.svg"
 import appleWatch from "@/assets/images/applewatch.svg"
 import cinemaCamera from "@/assets/images/cinemaCamera.svg"
+import CTA2 from './utils/CTA2'
 
 const BestProducts: React.FC = () => {
   return (
@@ -44,7 +44,7 @@ const BestProducts: React.FC = () => {
                 iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use.
               </p>
 
-              <CTA />
+              <CTA2 url='/products' />
             </div>
           </Link>
         </div>
@@ -171,7 +171,7 @@ const BestProducts: React.FC = () => {
                 The new 15-inch MacBook Air makes room for more of what you love with a spacious Liquid Retina display.
               </p>
 
-              <CTA />
+              <CTA2 url='/products' />
             </div>
           </Link>
         </div>

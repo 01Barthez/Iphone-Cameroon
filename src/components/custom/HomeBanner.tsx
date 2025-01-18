@@ -1,10 +1,10 @@
 import React from 'react'
-import CTA from './utils/CTA'
 import ipad1 from '/images/ipad1.svg'
 import ipad2 from '/images/ipad-screen-violet.svg'
 import ipad3 from '/images/ipad-screen-blue.svg'
 import ipad4 from '/images/ipad_incline.svg'
 import ipad5 from '/images/apple-watch3.svg'
+import CTA2 from './utils/CTA2'
 
 const HomeBanner: React.FC = () => {
   return (
@@ -19,7 +19,7 @@ const HomeBanner: React.FC = () => {
         </span>
       
         <div className="mx-auto">
-          <CTA />
+          <CTA2 url='/products' className='bg-transparent'/>
         </div>
 
         {/* gradient Decoration */}

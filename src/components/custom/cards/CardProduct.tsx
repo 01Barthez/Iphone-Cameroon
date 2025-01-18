@@ -23,7 +23,7 @@ const CardProduct: React.FC<IProduct> = (props) => {
 
   return (
     <motion.div
-      className='group  w-fit relative px-4 py-8 bg-foreground/5 rounded-lg flex flex-col items-center gap-5'
+      className='group  w-fit relative px-4 py-8 bg-foreground/5 shadow-sm shadow-foreground/25 rounded-lg flex flex-col items-center gap-5'
       whileHover={{}}
     >
       {/* Head part */}

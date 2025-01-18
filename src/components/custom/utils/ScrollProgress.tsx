@@ -24,7 +24,7 @@ const ScrollProgressBar: React.FC = () => {
 
     return (
         <div
-            className={`fixed top-0 left-0 z-[99] h-1 transition-all ease-linear duration-300 bg-gradient-to-tr from-primary/40 to-primary rounded-full`}
+            className={`fixed top-0 left-0 z-[99] h-[3px] transition-all ease-linear duration-300 bg-gradient-to-tr dark:from-sky-400 from-foreground/5 to-foreground/65 dark:to-sky-500 rounded-full`}
             style={{ width: `${progressBar}%` }}
             role="progressbar"
             aria-label="Barre de progression de défilement"

@@ -11,6 +11,8 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
+import FlickeringGrid from "@/components/ui/flickering-grid";
+import { TextAnimate } from "@/components/ui/text-animate";
 
 /**
  * Functional component for rendering a footer
@@ -81,10 +83,12 @@ const Footer: React.FC = () => {
       </div>
 
       {/* Profile */}
-      <div className="w-full p-1 space-x-1 font-light text-sm flex justify-center bg-footer-foreground/20">
+      <div className="w-full px-1 py-[3px] space-x-4 font-light text-sm flex justify-center bg-footer-foreground/20">
         <span>Designed and developped by</span>
 
-        <TooltipProvider delayDuration={100}>
+        <TooltipProvider
+          delayDuration={100}
+        >
           <Tooltip>
             <TooltipTrigger>
               <Link
@@ -96,8 +100,89 @@ const Footer: React.FC = () => {
               </Link>
             </TooltipTrigger>
 
-            <TooltipContent className='bg-transparent border border-foreground text-foreground'>
-              <p>I'm Full Stack JS developper, Click to see more...</p>
+            <TooltipContent className='px-6 py-2 relative bg-footer border border-footer-foreground text-footer-foreground text-xs'>
+              <p className='relative z-30 space-y-3 leading-4'>
+                <p className="flex flex-col gap-2">
+                  <span className="bg-footer w-fit">
+                    <TextAnimate animation="slideLeft" by="character">
+                      Hello, I am Barthez Kenwou,
+                    </TextAnimate>
+                  </span>
+                  <p className="">
+                  <span className="bg-footer">
+                    I am a passionate <b>full-stack web</b> developer,
+                  </span>
+                  <br />
+                  <span className="bg-footer">
+                    specializing in crafting efficient and tailored digital solutions.
+                  </span>
+                  <br />
+                  <span className="bg-footer">
+                    An expert in transforming ideas into modern applications,
+                  </span>
+                  <br />
+                  <span className="bg-footer">
+                    I combine creativity with technical precision.
+                  </span>
+                  <br />
+                  <span className="bg-footer">
+                    Always seeking innovation, I am committed to tackling
+                  </span>
+                  <br />
+                  <span className="bg-footer">
+                    digital challenges with professionalism and efficiency.
+                  </span>
+                  </p>
+                </p>
+
+
+                <p className="flex items-center gap-10">
+                  <p className="bg-footer flex flex-col leading-3 w-fit">
+                    <span>Do you want to</span>
+                    <span>contact me ?</span>
+                  </p>
+
+                  {/* Contact Informations */}
+                  <div className="leading-4">
+                    <p className="bg-footer w-fit">
+                      Linkedin:
+                      <Link
+                        to={'https://www.linkedin.com/in/barthez-kenwou/'}
+                        target='_blank'
+                        className='font-medium text-sky-500/85 hover:text-sky-500  duration-200 text-nowrap'
+                      >
+                        <TextAnimate animation="blurIn" className='inline ml-2'>
+                          My LinkedIn profile
+                        </TextAnimate>
+                      </Link>
+                    </p>
+
+                    <p className="bg-footer w-fit">
+                      Whatsapp:
+                      <Link
+                        to={'https://wa.me/655646688'}
+                        target='_blank'
+                        className='font-medium text-sky-500/85 hover:text-sky-500  duration-200 text-nowrap'
+                      >
+                        <TextAnimate animation="blurIn" by="character" className='inline ml-2'>
+                          +237 655 646 688
+                        </TextAnimate>
+                      </Link>
+                    </p>
+                  </div>
+                </p>
+              </p>
+
+              <FlickeringGrid
+                className="z-0 absolute inset-0 size-full"
+                squareSize={4}
+                gridGap={6}
+                color="#2f22f2"
+                maxOpacity={0.3}
+                flickerChance={0.8}
+                height={800}
+                width={800}
+              />
             </TooltipContent>
           </Tooltip>
         </TooltipProvider>

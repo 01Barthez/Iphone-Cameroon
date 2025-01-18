@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import React from "react";
 
 export interface ISEOProps {
   title: string;
@@ -54,15 +55,13 @@ export interface IcardCategory {
   href: string;
 }
 
-export interface ICTAProduct { 
+export interface ICTAProduct extends React.ButtonHTMLAttributes<HTMLButtonElement>{ 
   name?: string; 
   url: string 
 }
 
-export interface ICTA2 { 
-  name?: string; 
-  url: string 
-}
+export interface ICTA extends ICTAProduct{ };
+export interface ICTA2 extends ICTA{ };
 
 type statutProduct = "New" | "Best Seller" | "Popular" | "Discount" | "Free Shipping" | "On Stock" | "On Solde" | null
 
