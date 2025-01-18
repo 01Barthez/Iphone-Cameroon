@@ -54,6 +54,16 @@ export interface IcardCategory {
   href: string;
 }
 
+export interface ICTAProduct { 
+  name?: string; 
+  url: string 
+}
+
+export interface ICTA2 { 
+  name?: string; 
+  url: string 
+}
+
 type statutProduct = "New" | "Best Seller" | "Popular" | "Discount" | "Free Shipping" | "On Stock" | "On Solde" | null
 
 export interface IProduct {

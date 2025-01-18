@@ -97,4 +97,13 @@
     content: '';
     @apply absolute -bottom-1.5 left-0 h-[3px] w-full rounded-full bg-foreground;
   }
+
+  .cancelPrice {
+    @apply relative;
+  }
+
+  .cancelPrice::after {
+    content: '';
+    @apply absolute left-0 top-1/2 h-[2px] w-[80%] rotate-[35deg] rounded-full bg-foreground;
+  }
 }
