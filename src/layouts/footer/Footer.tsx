@@ -83,7 +83,7 @@ const Footer: React.FC = () => {
       </div>
 
       {/* Profile */}
-      <div className="w-full px-1 py-[3px] space-x-4 font-light text-sm flex justify-center bg-footer-foreground/20">
+      <div className="w-full px-1 py-[3px] space-x-1 font-light text-sm flex justify-center bg-footer-foreground/20">
         <span>Designed and developped by</span>
 
         <TooltipProvider

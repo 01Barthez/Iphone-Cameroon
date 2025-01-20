@@ -23,7 +23,7 @@ const Home: React.FC = () => {
                 <BestProducts />
                 <BrowseByCategory />
                 <SomeProducts />
-                <TopSeller />
+                {/* <TopSeller /> */}
                 <DiscountProduct />
                 <HomeBanner />
             </>

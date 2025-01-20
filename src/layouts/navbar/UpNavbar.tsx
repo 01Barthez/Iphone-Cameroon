@@ -32,28 +32,28 @@ const UpNavbar: React.FC = () => {
             <div className="flex items-center gap-4">
               <NavLink
                 to={`/`}
-                className={({ isActive }) => `font-medium text-nowrap ${isActive ? "text-foreground" : "text-foreground/60 duration-200"}`}
+                className={({ isActive }) => `font-medium text-nowrap ${isActive ? "text-foreground" : "text-foreground/80 duration-200"}`}
               >
                 Home
               </NavLink>
 
               <NavLink
                 to={`/products`}
-                className={({ isActive }) => `font-medium text-nowrap ${isActive ? "text-foreground" : "text-foreground/60 duration-200"}`}
+                className={({ isActive }) => `font-medium text-nowrap ${isActive ? "text-foreground" : "text-foreground/80 duration-200"}`}
               >
                 Products
               </NavLink>
 
               <NavLink
                 to={`/blog`}
-                className={({ isActive }) => `font-medium text-nowrap ${isActive ? "text-foreground" : "text-foreground/60 duration-200"}`}
+                className={({ isActive }) => `font-medium text-nowrap ${isActive ? "text-foreground" : "text-foreground/80 duration-200"}`}
               >
                 Blog
               </NavLink>
 
               <NavLink
                 to={`/contact`}
-                className={({ isActive }) => `font-medium text-nowrap ${isActive ? "text-foreground" : "text-foreground/60 duration-200"}`}
+                className={({ isActive }) => `font-medium text-nowrap ${isActive ? "text-foreground" : "text-foreground/80 duration-200"}`}
               >
                 Contact Us
               </NavLink>

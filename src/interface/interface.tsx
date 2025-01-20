@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import React from "react";
+import type React from "react";
 
 export interface ISEOProps {
   title: string;
@@ -55,13 +55,13 @@ export interface IcardCategory {
   href: string;
 }
 
-export interface ICTAProduct extends React.ButtonHTMLAttributes<HTMLButtonElement>{ 
-  name?: string; 
-  url: string 
+export interface ICTAProduct extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  name?: string;
+  url: string
 }
 
-export interface ICTA extends ICTAProduct{ };
-export interface ICTA2 extends ICTA{ };
+export interface ICTA extends ICTAProduct { };
+export interface ICTA2 extends ICTA { };
 
 type statutProduct = "New" | "Best Seller" | "Popular" | "Discount" | "Free Shipping" | "On Stock" | "On Solde" | null
 
@@ -78,4 +78,12 @@ export interface IProduct {
   promoDelay?: number;
   promoPercent?: number;
   statut?: statutProduct;
+}
+
+export interface ICardTopSeller extends React.HTMLProps<HTMLElement> {
+  img: string;
+  name: string;
+  description: string;
+  url: string;
+  opacity: number;
 }
