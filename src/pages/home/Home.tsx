@@ -5,7 +5,7 @@ import Hero from '@/components/custom/Hero'
 import HomeBanner from '@/components/custom/HomeBanner'
 import SEO from '@/components/custom/SEO'
 import SomeProducts from '@/components/custom/SomeProducts'
-import TopSeller from '@/components/custom/TopSeller'
+// import TopSeller from '@/components/custom/TopSeller'
 import React from 'react'
 
 const Home: React.FC = () => {
