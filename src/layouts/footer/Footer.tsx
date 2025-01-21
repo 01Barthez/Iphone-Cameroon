@@ -162,6 +162,7 @@ const Footer: React.FC = () => {
                       <Link
                         to={'https://wa.me/655646688'}
                         target='_blank'
+                        rel="noopener noreferrer"
                         className='font-medium text-sky-500/85 hover:text-sky-500  duration-200 text-nowrap'
                       >
                         <TextAnimate animation="blurIn" by="character" className='inline ml-2'>

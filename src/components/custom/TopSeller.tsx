@@ -23,41 +23,7 @@ const TopSeller: React.FC = () => {
             url="/products/category/news"
             opacity={20}
           />
-          <CardTopSeller
-            img="/src/assets/images/Macbook.svg"
-            name="Popular Products"
-            description="iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use."
-            url="/products/category/news"
-            opacity={20}
-          />
-          <CardTopSeller
-            img="/src/assets/images/Macbook.svg"
-            name="Popular Products"
-            description="iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use."
-            url="/products/category/news"
-            opacity={20}
-          />
-          <CardTopSeller
-            img="/src/assets/images/Macbook.svg"
-            name="Popular Products"
-            description="iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use."
-            url="/products/category/news"
-            opacity={20}
-          />
-          <CardTopSeller
-            img="/src/assets/images/Macbook.svg"
-            name="Popular Products"
-            description="iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use."
-            url="/products/category/news"
-            opacity={20}
-          />
-          <CardTopSeller
-            img="/src/assets/images/Macbook.svg"
-            name="Popular Products"
-            description="iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use."
-            url="/products/category/news"
-            opacity={20}
-          />
+         
         </SwiperSlide>
       </Swiper>
     </section>

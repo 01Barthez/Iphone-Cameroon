@@ -117,7 +117,7 @@ export const SocialLink: ISocialLink[] = [
     {
         id: uuidv4(),
         icon: <BsWhatsapp />,
-        url: "https://wa.me/237655646687?text=bonjour%20Iphone%20Cameroon%2C%20je%20voudrais%20discutter%20avec%20vous%20%C3%A0%20propos%20d%27un%20article%20que%20j%27ai%20vu%20sur%20votre%20site%20de%20vente%20en%20ligne%2C%20vous%20pouvez%20m%27accorder%20un%20instant%20%3F",
+        url: "https://wa.me/237655646688?text=bonjour%20Iphone%20Cameroon%2C%20je%20voudrais%20discutter%20avec%20vous%20%C3%A0%20propos%20d%27un%20article%20que%20j%27ai%20vu%20sur%20votre%20site%20de%20vente%20en%20ligne%2C%20vous%20pouvez%20m%27accorder%20un%20instant%20%3F",
         name: 'Whatsapp',
     },
 

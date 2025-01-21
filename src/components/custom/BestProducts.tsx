@@ -15,18 +15,18 @@ const BestProducts: React.FC = () => {
   return (
     <section className=''>
       {/* <div className="flex items-stretch gap-0"> */}
-      <Marquee repeat={20} pauseOnHover className="[--duration:25s] p-0">
+      <Marquee repeat={20} pauseOnHover className="[--duration:30s] p-0">
         {/* Bloc 0 */}
         <div className="w-fit lg:w-[50vw] h-full">
           <Link
             to={'/products/ipad'}
-            className="bg-foreground/5 md:py-28 w-full flex items-center"
+            className="overflow-hidden bg-foreground/5 md:py-28 w-full flex items-center"
           >
             <div className="w-full h-full">
               <img
                 src={ipdaPro}
                 alt="Ipad Pro, Iphone The best for the best products"
-                className='w-full h-full object-cover'
+                className='w-full h-full object-cover hover:scale-105 duration-300'
               />
             </div>
 
@@ -54,13 +54,13 @@ const BestProducts: React.FC = () => {
           {/* Up products */}
           <Link
             to={'/products/playstation'}
-            className="w-full flex items-center"
+            className="overflow-hidden w-full flex items-center"
           >
             <div className="w-full h-full">
               <img
                 src={playstation}
                 alt="Playstation apple to sell at a best price"
-                className='w-full h-full object-contain'
+                className='w-full h-full object-contain hover:scale-105 duration-300'
               />
             </div>
 
@@ -84,13 +84,13 @@ const BestProducts: React.FC = () => {
           <div className="w-full flex items-stretch gap-0">
             <Link
               to={'/products/apple-vision'}
-              className="flex-1 bg-foreground/5 flex items-center"
+              className="overflow-hidden flex-1 bg-foreground/5 flex items-center"
             >
               <div className="w-full h-full">
                 <img
                   src={appleVision}
                   alt="apple Vision, Computational audio"
-                  className="w-full h-full"
+                  className="w-full h-full hover:scale-105 duration-300"
                 />
               </div>
 
@@ -113,13 +113,13 @@ const BestProducts: React.FC = () => {
 
             <Link
               to={'/products/apple-vision-pro'}
-              className="flex-1 flex items-center bg-foreground/80 text-background"
+              className="overflow-hidden flex-1 flex items-center bg-foreground/80 text-background"
             >
               <div className="w-full h-full">
                 <img
                   src={boxe}
                   alt="Apple vision pro"
-                  className='w-full h-full'
+                  className='w-full h-full hover:scale-105 duration-300'
                 />
               </div>
 
@@ -147,13 +147,13 @@ const BestProducts: React.FC = () => {
         <div className="w-fit lg:w-[50vw] h-full">
           <Link
             to={'/products/mac-book'}
-            className="bg-foreground/5 py-12 w-full flex items-center flex-row-reverse"
+            className="overflow-hidden bg-foreground/5 py-12 w-full flex items-center flex-row-reverse"
           >
             <div className="w-full h-full">
               <img
                 src={macbook}
                 alt="The new 15-inch MacBook Air"
-                className='w-full h-full object-cover'
+                className='w-full h-full object-cover hover:scale-105 duration-300'
               />
             </div>
 
@@ -181,13 +181,13 @@ const BestProducts: React.FC = () => {
           {/* Up products */}
           <Link
             to={'/products/cinema-camera'}
-            className="w-full flex items-center"
+            className="overflow-hidden w-full flex items-center"
           >
             <div className="w-full h-full">
               <img
                 src={cinemaCamera}
                 alt="Blackmagic Pocket Cinema Camera 6k"
-                className='w-full h-full object-contain'
+                className='w-full h-full object-contain hover:scale-105 duration-300'
               />
             </div>
 
@@ -212,13 +212,13 @@ const BestProducts: React.FC = () => {
           <div className="w-full flex items-stretch gap-0">
             <Link
               to={'/products/samsung-galaxy'}
-              className="flex-1 bg-foreground/5 flex items-center"
+              className="overflow-hidden flex-1 bg-foreground/5 flex items-center"
             >
               <div className="w-full h-full">
                 <img
                   src={samsungGalaxy}
                   alt="Samsung Galaxy "
-                  className="w-full h-full"
+                  className="w-full h-full hover:scale-105 duration-300"
                 />
               </div>
 
@@ -240,13 +240,13 @@ const BestProducts: React.FC = () => {
 
             <Link
               to={'/products/apple-watch'}
-              className="flex-1 flex items-center bg-foreground/80 text-background"
+              className="overflow-hidden flex-1 flex items-center bg-foreground/80 text-background"
             >
               <div className="w-full h-full">
                 <img
                   src={appleWatch}
                   alt="Apple Watch Series 9 GPS 41mm Starlight Aluminium Case"
-                  className='w-full h-full'
+                  className='w-full h-full hover:scale-105 duration-300'
                 />
               </div>
 
