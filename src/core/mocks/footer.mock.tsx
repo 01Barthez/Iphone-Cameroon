@@ -53,12 +53,12 @@ export const FootersLinks: IFootersLinks[] = [
             },
 
             {
-                url: '/',
+                url: '/credit-and-payment',
                 name: 'Credit and Payment'
             },
 
             {
-                url: '/',
+                url: '/service-contact',
                 name: 'Service Contacts'
             },
 

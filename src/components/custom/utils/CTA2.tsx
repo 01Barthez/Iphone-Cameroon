@@ -9,7 +9,7 @@ const CTA2: React.FC<ICTA2> = ({name="Shop Now", url}) => {
     return (
         <Button
             variant={'outline'}
-            className='w-fit border-foreground bg-transparent py-5 px-6 md:px-10'
+            className='w-fit border-foreground bg-transparent py-5 px-6 md:px-10 backdrop-blur-md'
             onClick={() => { navigate(`${url}`) }}
         >
             {name}

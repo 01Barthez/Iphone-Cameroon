@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import type { JSX, ReactNode } from "react";
 import type React from "react";
 
 export interface ISEOProps {
@@ -86,4 +86,12 @@ export interface ICardTopSeller extends React.HTMLProps<HTMLElement> {
   description: string;
   url: string;
   opacity: number;
+}
+
+export interface IBenefits {
+  id: string;
+  icon: JSX.Element;
+  content: string;
+  link: string;
+  delay?: number;
 }

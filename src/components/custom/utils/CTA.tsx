@@ -8,7 +8,7 @@ const CTA: React.FC = () => {
     return (
         <Button
             variant={'outline'}
-            className='w-fit border-footer-foreground bg-background/5 text-base hover:bg-background/20 py-6 px-10 md:px-14'
+            className='w-fit border-footer-foreground bg-background/5 text-base hover:bg-background/20 py-6 px-10 md:px-14 backdrop-blur-md'
             onClick={() => { navigate("/products"); }}
         >
             Shop Now

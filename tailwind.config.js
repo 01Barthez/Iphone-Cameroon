@@ -91,13 +91,22 @@ export default {
   				to: {
   					transform: 'translateY(calc(-100% - var(--gap)))'
   				}
-  			}
+  			},
+			  incommingErrorMSG: {
+				from: {
+				  opacity: "0",
+				},
+				to: {
+				  opacity: "100",
+				},
+			  },
   		},
   		animation: {
+			"incommingBox": 'incommingBox 0.5s ease-out',
   			marquee: 'marquee var(--duration) infinite linear',
   			'marquee-vertical': 'marquee-vertical var(--duration) linear infinite',
 			'spin-slow': 'spin 4s linear infinite',
-  		}
+  		},
   	}
   },
   plugins: [require('tailwindcss-animate')],
