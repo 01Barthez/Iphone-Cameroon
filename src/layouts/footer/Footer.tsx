@@ -59,6 +59,7 @@ const Footer: React.FC = () => {
                   key={link.id}
                   to={link.url}
                   target='_blank'
+                  rel="noopener noreferrer"
                   title={`contact us on ${link.name}`}
                   className='text-lg md:text-xl p-2 text-footer-foreground/80 hover:bg-footer-foreground/10 rounded-full duration-200'
                 >
@@ -94,6 +95,7 @@ const Footer: React.FC = () => {
               <Link
                 to={'https://www.linkedin.com/in/barthez-kenwou/'}
                 target='_blank'
+                rel="noopener noreferrer"
                 className='font-normal text-sky-300/70 hover:text-sky-500/70 hover:underline duration-200 text-nowrap'
               >
                 Barthez Kenwou
@@ -160,7 +162,7 @@ const Footer: React.FC = () => {
                     <p className="bg-footer w-fit">
                       Whatsapp:
                       <Link
-                        to={'https://wa.me/655646688'}
+                        to={'https://wa.me/237655646688?text=bonjour%20Barthez%20Kenwou'}
                         target='_blank'
                         rel="noopener noreferrer"
                         className='font-medium text-sky-500/85 hover:text-sky-500  duration-200 text-nowrap'
