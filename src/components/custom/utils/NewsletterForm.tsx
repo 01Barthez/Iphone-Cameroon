@@ -28,7 +28,7 @@ const NewsletterForm: React.FC = () => {
 
       // Success message at the end
       toast({
-        title: "Abonnement Réussite !",
+        title: "Successful subscription !",
         description: <>
           <p>Thank's <b>{values.email}</b>:  to subscribe to our plateform 🎉</p>
         </>,

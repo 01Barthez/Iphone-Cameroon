@@ -15,6 +15,7 @@ const Testimonies: React.FC = () => {
             </p>
 
             {/* Testimony part */}
+            
         </section>
     )
 }
