@@ -17,7 +17,7 @@ const TopSeller: React.FC = () => {
       >
         <SwiperSlide>
           <CardTopSeller
-            img="/src/assets/images/Macbook.svg"
+            img="/src/assets/images/Macboo.svg"
             name="Popular Products"
             description="iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use."
             url="/products/category/news"

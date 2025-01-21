@@ -102,9 +102,9 @@ const UpNavbar: React.FC = () => {
         </div>
 
         {/* Menu button, for small screens */}
-        <div className="block md:hidden">
-          <Button className="w-auto h-auto shadow-none border-none text-xl p-3 hover:bg-foreground/10 rounded-full duration-200">
-            <AiOutlineMenu />
+        <div className="block md:hidden group">
+          <Button className="w-auto h-auto shadow-none border-none p-2.5 rounded-lg bg-transparent group-hover:bg-foreground/15 text-foreground/95 group-hover:text-foreground duration-200">
+            <AiOutlineMenu size={32}/>
           </Button>
         </div>
       </div>

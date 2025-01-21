@@ -23,15 +23,15 @@ const Home: React.FC = () => {
             {/* App Comoments */}
             <>
                 <Hero />
-                 <BestProducts />
-               <BrowseByCategory />
+                <BestProducts />
+                <BrowseByCategory />
                 <SomeProducts />
                 <TopSeller />
                 <DiscountProduct />
                 <HomeBanner />
                 <Testimonies />
                 <Newsletter />
-                <Benefits/>
+                <Benefits />
             </>
         </>
     )

@@ -56,7 +56,7 @@ const NewsletterForm: React.FC = () => {
                           minLength={5}
                           maxLength={75}
                           autoComplete="off"
-                          className="w-full max-w-[50rem] md:max-w-full px-2 md:px-4 py-1 md:py-2 border-none focus:border-none focus:outline-none focus-visible:outline-none focus-visible:border-none text-sm md:text-base placeholder:text-sm md:placeholder:text-base"
+                          className="w-full max-w-[50rem] md:max-w-full text-footer/95 px-2 md:px-4 py-1 md:py-2 border-none focus:border-none focus:outline-none focus-visible:outline-none focus-visible:border-none text-sm md:text-base placeholder:text-sm md:placeholder:text-base"
                           {...field}
                         />
                       </FormControl>
