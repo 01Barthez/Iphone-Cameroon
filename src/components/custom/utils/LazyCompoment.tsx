@@ -16,7 +16,7 @@ const LazyComponent: React.FC<ILazyCompoment> = ({ componentPath }) => {
                 return module;
             })
             .catch((e) => {
-                throw new Error("\nFailed to load compoments to path " +componentPath + "Error: "+  e)
+                throw new Error("\nFailed to load compoments to path " +componentPath + " \nError: "+  e)
             })
     );
 

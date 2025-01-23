@@ -60,7 +60,7 @@ const Router = createBrowserRouter([
 				children: [
 					{
 						path: '/',
-						element: <LazyComponent componentPath='/src/pages/home/Hom'/>
+						element: <LazyComponent componentPath='/src/pages/home/Home'/>
 					},
 
 					{

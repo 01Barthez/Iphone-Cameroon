@@ -2,7 +2,7 @@ import SEO from '@/components/custom/SEO'
 import React from 'react'
 import { Meteors } from '@/components/ui/meteors'
 import { Link } from 'react-router-dom'
-import pageNoteFound from '/public/images/not-found-image.png'
+import pageNoteFound from '/images/not-found-image.png'
 
 const PageError: React.FC = () => {
 	return (
