@@ -92,21 +92,35 @@ export default {
   					transform: 'translateY(calc(-100% - var(--gap)))'
   				}
   			},
-			  incommingErrorMSG: {
-				from: {
-				  opacity: "0",
-				},
-				to: {
-				  opacity: "100",
-				},
-			  },
+  			incommingErrorMSG: {
+  				from: {
+  					opacity: '0'
+  				},
+  				to: {
+  					opacity: '100'
+  				}
+  			},
+  			meteor: {
+  				'0%': {
+  					transform: 'rotate(215deg) translateX(0)',
+  					opacity: '1'
+  				},
+  				'70%': {
+  					opacity: '1'
+  				},
+  				'100%': {
+  					transform: 'rotate(215deg) translateX(-500px)',
+  					opacity: '0'
+  				}
+  			}
   		},
   		animation: {
-			"incommingBox": 'incommingBox 0.5s ease-out',
+  			'incommingBox': 'incommingBox 0.5s ease-out',
   			marquee: 'marquee var(--duration) infinite linear',
   			'marquee-vertical': 'marquee-vertical var(--duration) linear infinite',
-			'spin-slow': 'spin 4s linear infinite',
-  		},
+  			'spin-slow': 'spin 4s linear infinite',
+  			meteor: 'meteor 5s linear infinite'
+  		}
   	}
   },
   plugins: [require('tailwindcss-animate')],
