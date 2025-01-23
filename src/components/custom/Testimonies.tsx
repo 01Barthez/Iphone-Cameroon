@@ -3,8 +3,8 @@ import React from 'react'
 const Testimonies: React.FC = () => {
     return (
         <section className='container py-6 md:py-10 lg:py-12 flex flex-col gap-6 items-center'>
-            <h3 className="text-center text-2xl md:text-3xl lg:text-4xl font-semibold">
-                Hear from our customers
+            <h3 className="text-center text-3xl lg:text-4xl font-light">
+                Hear from <span className="font-medium">our customers</span>
             </h3>
 
             <p className="max-w-full md:max-w-[85%] text-center text-sm md:text-base text-foreground/90 ">

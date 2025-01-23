@@ -19,13 +19,12 @@ import Notification from '@/pages/notifications/Notification'
 import Promotion from '@/pages/promotions/Promotion'
 import TrackOrder from '@/pages/order/TrackOrder'
 import Return from '@/pages/return/Return'
-import Home from '@/pages/home/Home'
+// import Home from '@/pages/home/Home'
 import settingsRoute from './routes-config/settingRoutes'
 import authRoutes from './routes-config/authRoutes'
 import ScrollToTop from '@/components/custom/utils/ScrollToTop'
 import PrivateRoute from '@/components/custom/utils/PrivateRoute'
-
-// const Home = lazy(() => import('@/pages/home/Home'))
+import LazyComponent from '@/components/custom/utils/LazyCompoment'
 
 const userNameSlug = 'barthez';
 
@@ -61,7 +60,7 @@ const Router = createBrowserRouter([
 				children: [
 					{
 						path: '/',
-						element: <Home />
+						element: <LazyComponent componentPath='/src/pages/home/Home'/>
 					},
 
 					{

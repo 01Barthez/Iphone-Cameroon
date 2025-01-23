@@ -6,10 +6,20 @@ import CTAProduct from "@/components/custom/utils/CTAProduct";
 import truncateText from "@/components/custom/utils/TruncateText";
 import { lettersCaracteristiqueProduct, lettersNameProduct } from "@/core/constant/constant";
 import { motion } from 'motion/react';
+import { useToast } from "@/hooks/use-toast";
 
 const CardProduct: React.FC<IProduct> = (props) => {
+  const { toast } = useToast()
+  
   const whislistProduct = () => {
-    console.log(`product of id=${props.id} has been succesful whislisted !`);
+    // API to upadate the product to whishList here... 
+
+  
+    // Success Message to the user
+    const message = `${props.name} has been succesful whishlisted !`
+    toast({
+      description: message
+    });
   }
 
   const calculateNewPrice = (oldPrice: number, reduction: number): number => {
@@ -26,27 +36,26 @@ const CardProduct: React.FC<IProduct> = (props) => {
       className='group relative w-fit p-[2px] bg-foreground/5 shadow-sm shadow-foreground/25 rounded-lg transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-indigo-500/60 hover:via-purple-500/80 hover:to-pink-500/80 overflow-hidden'
       whileHover={{}}
     >
-      <div className="relative bg-background px-4 py-8 z-40 rounded-lg h-full w-full flex flex-col items-center gap-5">
-
+      <div className="relative bg-background px-3 md:px-4 py-4 md:py-5 z-40 rounded-lg h-full w-full flex flex-col items-center gap-3 md:gap-5">
         {/* Head part */}
         <div className="w-full flex justify-end">
           <button
-            // className="bg-sky-500"
+            className={`text-2xl ${props.isWhiteListe && "text-blue-400"}`}
             onClick={whislistProduct}
           >
-            <AiOutlineHeart size={24} color="blue" />
+            <AiOutlineHeart />
           </button>
         </div>
 
         {/* Picture part */}
         <Link
           to={`/products/${props.id}`}
-          className="rounded-sm flex items-center justify-center min-h-40 min-w-[80%] text-sm text-destructive"
+          className="rounded-sm flex items-center justify-center min-h-32 max-h-60 md:min-h-40 min-w-[80%] text-sm text-destructive"
         >
           <img
             src={props.picture}
             alt={props.name}
-            className="select-none"
+            className="select-none hover:scale-105 duration-200"
           />
         </Link>
 
@@ -58,7 +67,7 @@ const CardProduct: React.FC<IProduct> = (props) => {
               to={`/products/${props.id}`}
               className=""
             >
-              <h3 className="text-lg font-semibold text-center tracking-wide">
+              <h3 className="text-base lg:text-lg font-semibold text-center tracking-wide">
                 {
                   truncateText(props.name, lettersNameProduct | 30, "letters")
                 }
@@ -72,7 +81,7 @@ const CardProduct: React.FC<IProduct> = (props) => {
                 to={`/products/${props.id}`}
                 className=""
               >
-                <p className="text-sm font-medium text-center text-foreground/80 !whitespace-normal break-words">
+                <p className="text-xs md:text-sm font-medium text-center text-foreground/80 !whitespace-normal break-words">
                   {
                     truncateText(props.caracteristiques, lettersCaracteristiqueProduct | 50, "letters")
                   }
@@ -101,7 +110,7 @@ const CardProduct: React.FC<IProduct> = (props) => {
                   </div>
                   :
                   // Price if promo is not defined
-                  <span className="font-semibold text-xl text-center">
+                  <span className="font-semibold text-lg md:text-xl text-center">
                     {props.price} €
                   </span>
               }

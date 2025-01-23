@@ -5,9 +5,9 @@ import NewsletterForm from './utils/NewsletterForm'
 const Newsletter: React.FC = () => {
     return (
         <section className='bg-gradient-to-br from-foreground/70 via-slate-800/90 to-foreground/80 dark:from-slate-900/80 dark:via-slate-800 dark:to-background py-6 md:py-10 lg:py-12'>
-            <div className="container flex flex-col items-center gap-4 md:gap-6 lg:gap-8">
-                <h3 className="text-center text-2xl md:text-3xl lg:text-4xl text-footer-foreground font-semibold">
-                    Sign up for our newsletter
+            <div className="container flex flex-col items-center gap-6 lg:gap-8">
+                <h3 className="text-center text-3xl md:text-4xl text-footer-foreground font-light">
+                    Sign up for <span className="font-medium">our newsletter</span>
                 </h3>
 
                 <p className="max-w-full md:max-w-[85%] lg:max-w-[70%] text-center text-sm md:text-base text-footer-foreground/90 ">
@@ -22,7 +22,7 @@ const Newsletter: React.FC = () => {
 
                     {/* Notification */}
                     <p className="text-center text-xs md:text-sm text-footer-foreground/80">
-                        By subscribing, you agree with Our&nbsp;
+                        By subscribing, you agree with Our <br className="md:hidden"/>
                         <Link
                             to={'/terms-and-conditions'}
                             className='text-sky-400 hover:underline duration-300'

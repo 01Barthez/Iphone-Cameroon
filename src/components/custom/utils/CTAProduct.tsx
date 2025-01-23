@@ -7,7 +7,7 @@ const CTAProduct: React.FC<ICTAProduct> = ({ url, name="Buy Now" }) => {
 
     return (
         <button
-            className="w-fit bg-foreground/95 hover:bg-foreground px-14 py-2 rounded-md text-background/95 hover:text-background font-semibold duration-300 whitespace-nowrap backdrop-blur-md"
+            className="w-fit bg-foreground/95 hover:bg-foreground px-8 md:px-10 lg:px-14 py-1.5 md:py-2 rounded-lg border-none text-background/95 hover:text-background font-medium duration-300 whitespace-nowrap backdrop-blur-md"
             onClick={() => navigate(url)}
         >
             {name}

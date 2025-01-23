@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const Hero: React.FC = () => {
   return (
-    <div className='relative overflow-hidden min-h-[90vh] pt-16 bg-hero text-footer-foreground'>
+    <div className='relative overflow-hidden min-h-[90vh] pt-24 md:pt-16 bg-hero text-footer-foreground'>
       <div className="container flex flex-col lg:flex-row items-center gap-16 md:gap-6 justify-between">
         {/* Left part for description */}
         <motion.div className="relative flex flex-col gap-4 z-20"

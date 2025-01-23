@@ -10,7 +10,6 @@ const App: React.FC = () => {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <ScrollProgressBar />
-
       <RouterProvider router={Router} />
       
       <Toaster />

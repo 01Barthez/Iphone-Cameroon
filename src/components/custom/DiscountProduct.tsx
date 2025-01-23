@@ -7,7 +7,7 @@ const DiscountProduct: React.FC = () => {
     <section className="py-8 md:py-10 lg:py-14 space-y-4 md:space-y-6 lg:space-y-8">
       <div className="container space-y-8">
         {/* Selected navabar */}
-        <h4 className="text-center md:text-left text-xl font-medium text-foreground cursor-default">
+        <h4 className="text-center md:text-left text-2xl md:text-3xl lg:text-4xl font-medium text-foreground cursor-default">
           Discounts up to -50%
         </h4>
 
@@ -17,11 +17,11 @@ const DiscountProduct: React.FC = () => {
             <CardProduct
               id="product5"
               slug='iphone-14'
-              picture={'src/assets/images/iphone14.svg'}
+              picture={'src/assets/images/iphone1.svg'}
               name="Apple iPhone 14 Pro Max"
               caracteristiques="128GB Deep Purple (MQ9T3RX/A)"
               price={900}
-              isWhiteListe={false}
+              isWhiteListe={true}
               isPromo={true}
               promoPercent={20}
               statut="New"
@@ -29,8 +29,8 @@ const DiscountProduct: React.FC = () => {
             <CardProduct
               id="product5"
               slug='iphone-14'
-              picture={'src/assets/images/iphone14.svg'}
-              name="Apple iPhone 14 Pro Max"
+              picture={'src/assets/images/samsunggalaxy.svg'}
+              name="Samsung Galaxy"
               caracteristiques="128GB Deep Purple (MQ9T3RX/A)"
               price={900}
               isWhiteListe={false}
@@ -58,7 +58,7 @@ const DiscountProduct: React.FC = () => {
               picture={'src/assets/images/iphone14.svg'}
               name="Apple iPhone 14 Pro Max"
               price={900}
-              isWhiteListe={false}
+              isWhiteListe={true}
               isPromo={false}
               promoPercent={20}
               statut="New"

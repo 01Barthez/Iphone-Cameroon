@@ -23,11 +23,11 @@ import { TextAnimate } from "@/components/ui/text-animate";
 const Footer: React.FC = () => {
   return (
     <footer className='bg-footer text-footer-foreground w-full border-t border-t-foreground/80'>
-      <div className="relative container py-10 space-y-10">
+      <div className="relative container py-6 md:py-10 space-y-6 md:space-y-8 lg:space-y-10">
         {/* First line */}
-        <div className="relative z-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8 justify-items-center md:justify-items-start">
+        <div className="relative z-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-6 lg:gap-8 justify-items-center md:justify-items-start">
           {/* Logo and description colonn */}
-          <div className="max-w-md col-span-1 lg:col-span-2 flex flex-col gap-4 items-center md:items-start">
+          <div className="max-w-md col-span-1 lg:col-span-2 flex flex-col gap-3 md:gap-4 items-center md:items-start">
             {/* Logo */}
             <Logo isDarkZone={true} />
 
@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Second line line */}
-        <div className="relative z-20 flex flex-col-reverse md:flex-row items-center gap-4 md:justify-between">
+        <div className="relative z-20 flex flex-col-reverse md:flex-row items-center gap-2 md:gap-4 md:justify-between">
           {/* Socials Links */}
           <div className=" flex gap-2">
             {

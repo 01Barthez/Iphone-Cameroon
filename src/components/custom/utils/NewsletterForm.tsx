@@ -56,7 +56,7 @@ const NewsletterForm: React.FC = () => {
                           minLength={5}
                           maxLength={75}
                           autoComplete="off"
-                          className="w-full max-w-[50rem] md:max-w-full text-footer/95 px-2 md:px-4 py-1 md:py-2 border-none focus:border-none focus:outline-none focus-visible:outline-none focus-visible:border-none text-sm md:text-base placeholder:text-sm md:placeholder:text-base"
+                          className="w-full max-w-[50rem] md:max-w-full text-footer/95 px-2 md:px-4 py-1.5 md:py-2 border-none focus:border-none focus:outline-none focus-visible:outline-none focus-visible:border-none text-sm md:text-base placeholder:text-sm md:placeholder:text-base"
                           {...field}
                         />
                       </FormControl>
@@ -67,7 +67,7 @@ const NewsletterForm: React.FC = () => {
 
                 <Button
                   type="submit"
-                  className="w-auto h-auto rounded-l-none rounded-r-lg py-1 md:py-1.5 px-2 md:px-3 bg-footer/90 text-footer-foreground/90 hover:bg-footer hover:text-footer-foreground duration-300"
+                  className="w-auto h-auto rounded-l-none rounded-r-lg py-1.5 md:py-1.5 px-2 md:px-3 bg-footer/90 text-footer-foreground/90 hover:bg-footer hover:text-footer-foreground duration-300"
                 >
                   <span className="text-sm md:text-lg">
                     Suscribe

@@ -8,10 +8,10 @@ import CTA2 from './utils/CTA2'
 
 const HomeBanner: React.FC = () => {
   return (
-    <section className="relative overflow-hidden w-full bg-gradient-to-bl from-foreground/55 to-foreground/15 dark:from-foreground/5 dark:to-foreground/15 py-20 md:py-32 lg:py-40 flex items-center justify-center">
+    <section className="relative overflow-hidden w-full bg-gradient-to-bl from-foreground/55 via-white to-foreground/15 dark:from-foreground/5 dark:via-transparent dark:to-foreground/15 py-20 md:py-32 lg:py-40 flex items-center justify-center">
       <div className="relative z-40 container max-w-[90%] flex flex-col items-center gap-6 md:gap-8 lg:gap-10 w-fit p-0">
-        <h2 className="text-3xl md:text-5xl lg:text-7xl font-extralight text-center">
-          Big Summer <span className="font-normal">Sale</span>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-center">
+          Big Summer <span className="font-medium">Sale</span>
         </h2>
 
         <span className="text-center text-sm md:text-base text-foreground/90">
