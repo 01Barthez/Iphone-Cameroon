@@ -50,7 +50,7 @@ const CardProduct: React.FC<IProduct> = (props) => {
         {/* Picture part */}
         <Link
           to={`/products/${props.id}`}
-          className="rounded-sm flex items-center justify-center min-h-32 max-h-60 md:min-h-40 min-w-[80%] text-sm text-destructive"
+          className="rounded-sm overflow-hidden flex items-center justify-center min-h-32 max-h-60 md:min-h-40 min-w-[80%] text-sm text-destructive"
         >
           <img
             src={props.picture}

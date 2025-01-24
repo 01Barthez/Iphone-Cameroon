@@ -1,9 +1,15 @@
 import React from 'react'
 import CardProduct from './cards/CardProduct';
 import CTA2 from './utils/CTA2';
+import { useFetch } from '@/hooks/use-fetch';
+import { DEFAULT_URL } from '@/api/api';
+import type { IProduct } from '@/interface/interface';
 
 const SomeProducts: React.FC = () => {
-  // const [isActive, setIsActive] = React.useState<boolean>(false);
+  const { data, loading, error } = useFetch<IProduct[]>(`${DEFAULT_URL}/products`);
+
+  const products = data;
+  // const products = data?.length(8);
 
   return (
     <section className="py-8 md:py-10 lg:py-14 space-y-4 md:space-y-6 lg:space-y-8">
@@ -26,106 +32,23 @@ const SomeProducts: React.FC = () => {
         {/* Products  */}
         <div className="flex items-center flex-col gap-10">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-3 lg:gap-4 place-items-center md:place-items-stretch">
-            <CardProduct
-              id="product5"
-              slug='iphone-14'
-              picture={'src/assets/images/iphone14.svg'}
-              name="Apple iPhone 14 Pro Max"
-              caracteristiques="128GB Deep Purple (MQ9T3RX/A)"
-              price={900}
-              isWhiteListe={false}
-              isPromo={true}
-              promoPercent={20}
-              statut="New"
-            />
-            <CardProduct
-              id="product5"
-              slug='iphone-14'
-              picture={'src/assets/images/iphone14.svg'}
-              name="Apple iPhone 14 Pro Max"
-              caracteristiques="128GB Deep Purple (MQ9T3RX/A)"
-              price={900}
-              isWhiteListe={false}
-              isPromo={false}
-              promoPercent={20}
-              statut="New"
-            />
-
-            <CardProduct
-              id="product5"
-              slug='iphone-14'
-              picture={'src/assets/images/iphone14.svg'}
-              name="Apple iPhone 14 Pro Max"
-              caracteristiques="128GB Deep Purple (MQ9T3RX/A)"
-              price={900}
-              isWhiteListe={false}
-              isPromo={true}
-              promoPercent={20}
-              statut="New"
-            />
-
-            <CardProduct
-              id="product5"
-              slug='iphone-14'
-              picture={'src/assets/images/iphone14.svg'}
-              name="Apple iPhone 14 Pro Max"
-              price={900}
-              isWhiteListe={false}
-              isPromo={false}
-              promoPercent={20}
-              statut="New"
-            />
-
-            <CardProduct
-              id="product5"
-              slug='iphone-14'
-              picture={'src/assets/images/iphone14.svg'}
-              name="Apple iPhone 14 Pro Max"
-              price={900}
-              isWhiteListe={false}
-              isPromo={true}
-              promoPercent={20}
-              statut="New"
-            />
-
-            <CardProduct
-              id="product5"
-              slug='iphone-14'
-              picture={'src/assets/images/iphone14.svg'}
-              name="Apple iPhone 14 Pro Max"
-              caracteristiques="128GB Deep Purple (MQ9T3RX/A)"
-              price={900}
-              isWhiteListe={false}
-              isPromo={true}
-              promoPercent={20}
-              statut="New"
-            />
-
-            <CardProduct
-              id="product5"
-              slug='iphone-14'
-              picture={'src/assets/images/iphone14.svg'}
-              name="Apple iPhone 14 Pro Max"
-              caracteristiques="128GB Deep Purple (MQ9T3RX/A)"
-              price={900}
-              isWhiteListe={false}
-              isPromo={true}
-              promoPercent={20}
-              statut="New"
-            />
-
-            <CardProduct
-              id="product5"
-              slug='iphone-14'
-              picture={'src/assets/images/iphone14.svg'}
-              name="Apple iPhone 14 Pro Max"
-              caracteristiques="128GB Deep Purple (MQ9T3RX/A)"
-              price={900}
-              isWhiteListe={false}
-              isPromo={true}
-              promoPercent={20}
-              statut="New"
-            />
+            {
+              products && products.slice(0, 8).map((product) => (
+                <CardProduct
+                  key={product.id}
+                  id={product.id}
+                  slug={product.slug}
+                  picture={product.picture}
+                  name={product.name}
+                  caracteristiques={product.caracteristiques}
+                  price={product.price}
+                  isWhiteListe={product.isWhiteListe}
+                  isPromo={product.isPromo}
+                  promoPercent={product.promoPercent}
+                  statut={product.statut}
+                />
+              ))
+            }
           </div>
 
           <CTA2 name="More Products" url='/products' />

@@ -1,32 +1,29 @@
+import React, { lazy, Suspense } from 'react';
 import LoaderPage from '@/layouts/loaders/LoaderPage';
-import React, { lazy, Suspense } from 'react'
-// import type { ReactNode } from 'react'
 
-export interface ILazyCompoment {
-    componentPath: string;
+interface DynamicPageLoaderProps {
+    pageKey: string; // Key representing the page to load dynamically
 }
 
-const LazyComponent: React.FC<ILazyCompoment> = ({ componentPath }) => {
-    const Component = lazy(() =>
-        import(`${componentPath}`)
-            .then((module) => {
-                if (!module.default) {
-                    throw new Error("Imported compoment don't have a defaut module !");
-                }
-                return module;
-            })
-            .catch((e) => {
-                throw new Error("\nFailed to load compoments to path " +componentPath + " \nError: "+  e)
-            })
-    );
+// Dynamically import pages using import.meta.glob
+const pages = import.meta.glob('/src/pages/**/*.tsx');
+
+const DynamicPageLoader: React.FC<DynamicPageLoaderProps> = ({ pageKey }) => {
+    // Lazy load the page based on the provided pageKey 
+    // @ts-ignore-next-line
+    const PageComponent = lazy(() => {
+        const importPage = pages[`/src/pages/${pageKey}.tsx`];
+        if (!importPage) {
+            return Promise.reject(new Error(`Page not found: ${pageKey}`));
+        }
+        return importPage();
+    });
 
     return (
-        <>
-            <Suspense fallback={<LoaderPage />}>
-                < Component />
-            </Suspense>
-        </>
-    )
-}
+        <Suspense fallback={<LoaderPage />}>
+                <PageComponent />
+        </Suspense>
+    );
+};
 
-export default LazyComponent
+export default DynamicPageLoader;

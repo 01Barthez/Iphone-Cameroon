@@ -3,8 +3,8 @@ import Navbar from '@/layouts/navbar/Navbar'
 import Footer from '@/layouts/footer/Footer'
 import PageError from '@/pages/error/PageError'
 import Blog from '@/pages/blog/Blog'
-import Products from '@/pages/products/Products'
-import ProductDetail from '@/pages/products/ProductDetail'
+// import Products from '@/pages/products/Products'
+// import ProductDetail from '@/pages/products/ProductDetail'
 import ProductCategory from '@/pages/products/ProductCategory'
 import Account from '@/pages/account/Account'
 import Order from '@/pages/order/Order'
@@ -24,7 +24,9 @@ import settingsRoute from './routes-config/settingRoutes'
 import authRoutes from './routes-config/authRoutes'
 import ScrollToTop from '@/components/custom/utils/ScrollToTop'
 import PrivateRoute from '@/components/custom/utils/PrivateRoute'
-import LazyComponent from '@/components/custom/utils/LazyCompoment'
+import DynamicPageLoader from '@/components/custom/utils/LazyCompoment'
+
+
 
 const userNameSlug = 'barthez';
 
@@ -60,7 +62,7 @@ const Router = createBrowserRouter([
 				children: [
 					{
 						path: '/',
-						element: <LazyComponent componentPath='/src/pages/home/Home'/>
+						element: <DynamicPageLoader pageKey="home/Home" />
 					},
 
 					{
@@ -86,12 +88,12 @@ const Router = createBrowserRouter([
 						children: [
 							{
 								path: '',
-								element: <Products />
+								element: <DynamicPageLoader pageKey="products/Products" />
 							},
 
 							{
 								path: ':productID',
-								element: <ProductDetail />
+								element: <DynamicPageLoader pageKey="products/ProductDetail" />
 							},
 
 							{
