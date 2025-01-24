@@ -6,7 +6,7 @@ import { DEFAULT_URL } from '@/api/api';
 import type { IProduct } from '@/interface/interface';
 
 const SomeProducts: React.FC = () => {
-  const { data, loading, error } = useFetch<IProduct[]>(`${DEFAULT_URL}/products`);
+  const { data } = useFetch<IProduct[]>(`${DEFAULT_URL}/products`);
 
   const products = data;
   // const products = data?.length(8);

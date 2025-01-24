@@ -1,4 +1,4 @@
-name: CI-CD pipeline - react-started
+name: CI-CD pipeline - Iphone-cameroon
 
 on:
   push:
