@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY package.json yarn.lock ./
 
-RUN yarn install --frozen-lockfile
+RUN if ! command -v yarn >/dev/null; then npm install -g yarn; fi && yarn install --frozen-lockfile
 
 COPY . .
 

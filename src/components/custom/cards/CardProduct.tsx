@@ -10,11 +10,11 @@ import { useToast } from "@/hooks/use-toast";
 
 const CardProduct: React.FC<IProduct> = (props) => {
   const { toast } = useToast()
-  
+
   const whislistProduct = () => {
     // API to upadate the product to whishList here... 
 
-  
+
     // Success Message to the user
     const message = `${props.name} has been succesful whishlisted !`
     toast({
@@ -56,6 +56,7 @@ const CardProduct: React.FC<IProduct> = (props) => {
             src={props.picture}
             alt={props.name}
             className="select-none hover:scale-105 duration-200"
+            loading="lazy"
           />
         </Link>
 

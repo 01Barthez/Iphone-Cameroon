@@ -17,9 +17,9 @@ const HomeBanner: React.FC = () => {
         <span className="text-center text-sm md:text-base text-foreground/90">
           Dazzling offers for an unforgettable summer!
         </span>
-      
+
         <div className="mx-auto">
-          <CTA2 url='/products' className='bg-transparent'/>
+          <CTA2 url='/products' className='bg-transparent' />
         </div>
 
         {/* gradient Decoration */}
@@ -28,19 +28,43 @@ const HomeBanner: React.FC = () => {
 
       {/* Some images */}
       <div className="pointer-events-none select-none block md:hidden lg:block absolute z-10 top-0 -left-14 lg:left-48 opacity-90">
-        <img src={ipad1} loading="lazy" alt="Ipad iphone product, the best for your summer" />
+        <img
+          src={ipad1}
+          loading="lazy"
+          alt="Ipad iphone product, the best for your summer"
+        />
       </div>
+     
       <div className="pointer-events-none select-none hidden md:block absolute z-20 lg:top-5 left-5 opacity-90">
-        <img src={ipad2} loading="lazy" alt="Ipad iphone product, the best for your summer" />
+        <img
+          src={ipad2}
+          loading="lazy"
+          alt="Ipad iphone product, the best for your summer"
+        />
       </div>
+     
       <div className="pointer-events-none select-none hidden lg:block absolute z-10 lg:top-48 lg:left-0 opacity-95">
-        <img src={ipad3} loading="lazy" alt="Ipad iphone product, the best for your summer" />
+        <img
+          src={ipad3}
+          loading="lazy"
+          alt="Ipad iphone product, the best for your summer"
+        />
       </div>
+     
       <div className="pointer-events-none select-none hidden md:block absolute z-10 bottom-0 lg:top-10 right-0">
-        <img src={ipad4} loading="lazy" alt="Ipad iphone product, the best for your summer" />
+        <img
+          src={ipad4}
+          loading="lazy"
+          alt="Ipad iphone product, the best for your summer"
+        />
       </div>
+     
       <div className="pointer-events-none select-none absolute z-10 -bottom-20 md:-bottom-14 lg:bottom-0 -right-16 md:right-10 opacity-90">
-        <img src={ipad5} loading="lazy" alt="Apple watch, the best for your summer" />
+        <img
+          src={ipad5}
+          loading="lazy"
+          alt="Apple watch, the best for your summer"
+        />
       </div>
     </section>
   )

@@ -8,7 +8,7 @@ const PageError: React.FC = () => {
 	return (
 		<section className='relative w-screen h-screen overflow-x-hidden py-10'>
 			<SEO
-				title='Page Not Found | React Projet Starter By Barthez Kenwou'
+				title='Page Not Found | Iphone Cameroon, with your dream become reality'
 				description='we are sorry but this page is not available at the moment.'
 			/>
 
@@ -22,12 +22,12 @@ const PageError: React.FC = () => {
 								404
 							</span>
 						</h1>
-						<h2 className='bg-background p-0 text-2xl md:text-3xl lg:text-5xl text-center font-semibold'>
+						<h2 className='bg-background p-0 w-fit text-2xl md:text-3xl lg:text-5xl text-center font-semibold'>
 							Page Not Found
 						</h2>
 					</div>
 
-					<p className="text-center text-base md:text-lg text-foreground/80">
+					<p className="bg-background p-0 w-fit text-center text-base md:text-lg text-foreground/80">
 						Sorry, the page you are looking for could not be found.
 					</p>
 
@@ -59,7 +59,7 @@ const PageError: React.FC = () => {
 					</div>
 				</div>
 
-				<div className="max-w-full lg:max-w-[50%] flex-1 w-full md:h-full flex items-center justify-center">
+				<div className="max-w-full lg:max-w-[50%] flex-1 w-full md:h-full flex items-center justify-center text-center">
 					<img
 						src={pageNoteFound}
 						alt="404 page not found"
